@@ -1,0 +1,209 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Crimson and Cream Theme */
+:root {
+    --crimson: #dc143c;
+    --cream: #fffdd0;
+}
+
+/* Header styles */
+header {
+    background-color: var(--crimson);
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: var(--cream);
+    color: var(--crimson);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Portfolio section */
+#portfolio {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+#portfolio h2 {
+    text-align: center;
+    color: var(--crimson);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Books section */
+#books {
+    padding: 4rem 2rem;
+    background-color: var(--cream);
+    color: var(--crimson);
+}
+
+#books h2, #books h3 {
+    text-align: center;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.book-item {
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid var(--crimson);
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.book-item h4 {
+    color: var(--crimson);
+    margin-bottom: 0.5rem;
+}
+
+/* About section */
+#about {
+    padding: 4rem 2rem;
+    background-color: var(--cream);
+    color: var(--crimson);
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#about p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact section */
+#contact {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+#contact h2 {
+    text-align: center;
+    color: var(--crimson);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 2px solid var(--crimson);
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: var(--crimson);
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: var(--crimson);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio-grid, .books-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-grid, .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
