@@ -13,9 +13,11 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#books">Books</a></li> <!-- Books in the nav -->
                 <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#game-jams">Game Jams</a></li> <!-- New navbar item -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -24,26 +26,35 @@
     <!-- Hero section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Hello, I'm Your Name</h1>
-            <p>Web Developer & Designer</p>
+            <h1>Hello, I'm Victoria Uriostegui Jr</h1>
+            <p>Game Developer & Computer Engineering Student</p>
         </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I’m a computer engineering student at the University of California, San Diego, studying in the Electrical and Computer Engineering Department. I’m from South Gate, CA, a predominantly Latinx community, and attended a high school where 99% of students are also Latinx. My career goal is to become a software engineer or game programmer, with a long-term dream of founding my own game studio to create immersive 4X strategy games inspired by companies like Paradox Interactive.
+
+            As a Latinx transgender woman, I am deeply committed to increasing transgender visibility in the gaming industry. This purpose fuels my ambition to develop inclusive games and spaces where everyone can see themselves represented.
+        </p>
     </section>
 
     <!-- Portfolio section -->
     <section id="portfolio">
         <h2>My Work</h2>
         <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300" alt="Project 1">
-                <p>Project 1 Description</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300" alt="Project 2">
-                <p>Project 2 Description</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/300" alt="Project 3">
-                <p>Project 3 Description</p>
+            <div class="portfolio-item" id="TheLastPetalsOfSpring">
+                <img src="./assets/Project1.jpg" alt="Project 1">
+                <h4>The Last Petals of Spring</h4>
+                <p class="post-mortem-p">The Last Petals of Spring is an engaging Yuri visual novel developed with Unreal Engine 5.5. Centered around Aya, a young protagonist navigating heartfelt choices among her close friends, the story unfolds primarily in Aya's room as players guide her through dates and deepening connections. Each playthrough offers a unique experience, revealing emotions and strengthening bonds, with the freedom to explore all three romantic paths upon completing a route.</p>
+                <p class="post-mortem-p">Read about it in my post-mortem report!</p>
+                <a href="https://dev.to/victoriadeveloper/post-mortem-the-development-of-the-last-petals-of-spring-37e4">Click here!</a>
+                <p class="post-mortem-p">Download my <a href="./assets/The Last Petals of Spring Kanban Planning.pdf" download>Kanban Board Planning PDF</a> to see my approach to project organization and task tracking.</p>
+                <p class="post-mortem-p">Visit the <a href="https://github.com/users/VictoriaDeveloper/projects/4">Github Project</a> to see my Kanban Board implementation.</p>
+                <p class="post-mortem-p">Take a look at the <a href="https://github.com/VictoriaDeveloper/LastPetalsOfSpring">Github Repository</a> to clone my repository.</p>
+                <p class="post-mortem-p"><a href="./assets/LastPetalsOfSpring.exe" download>Download</a> my game and try it out for yourself!</p>
             </div>
         </div>
     </section>
@@ -51,8 +62,6 @@
     <!-- Books section -->
     <section id="books">
         <h2>My Books</h2>
-
-        <!-- Currently Reading Section -->
         <h3>Currently Reading</h3>
         <div class="books-grid">
             <div class="book-item">
@@ -63,8 +72,6 @@
                 <p>I am currently reading this book.</p>
             </div>
         </div>
-
-        <!-- Read Section -->
         <h3>Read</h3>
         <div class="books-grid">
             <div class="book-item">
@@ -72,13 +79,11 @@
                     <img src="./assets/BlueprintsVisualScriptingForUnrealEngine5.jpg" alt="Book 1">
                 </a>
                 <h4>Blueprints Visual Scripting for Unreal Engine 5</h4>
-                <p>I have read this book check out my Technical Analysis 
-                    <a style="text-decoration: underline;"href="https://dev.to/victoriadeveloper/blueprint-visual-scripting-for-unreal-engine-5-third-edition-a-technical-analysis-2o5i">here</a> .
+                <p>I have read this book. Check out my Technical Analysis 
+                    <a style="text-decoration: underline;" href="https://dev.to/victoriadeveloper/blueprint-visual-scripting-for-unreal-engine-5-third-edition-a-technical-analysis-2o5i">here</a>.
                 </p>
             </div>
         </div>
-
-        <!-- In Library Section -->
         <h3>In Library</h3>
         <div class="books-grid">
             <div class="book-item">
@@ -100,18 +105,90 @@
                     <img src="./assets//UnrealEngine5CharacterCreationAnimationAndCinematics.jpg" alt="Book 6">
                 </a>
                 <h4>Unreal Engine 5 Character Creation, Animation and Cinematics</h4>
-                <p>This book is part of my collection, and I plan to read it soon ...</p>
+                <p>This book is part of my collection, and I plan to read it soon...</p>
             </div>
         </div>
     </section>
 
-    <!-- About section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm a passionate web developer with experience in building responsive and functional websites.
-            I love designing user interfaces and working on interesting projects.
-        </p>
+    <!-- Courses section -->
+    <section id="courses">
+        <h2>My Courses</h2>
+        <h3>Currently Watching</h3>
+        <div class="courses-grid">
+            <div class="course-item">
+                <a href="https://www.udemy.com/course/unreal-engine-5-blueprints-fps/?couponCode=ST2MT110724ANEW" target="_blank">
+                    <img src="./assets/Course4.jpg" alt="course">
+                </a>
+                <h4 class="post-mortem-p">UE5 Blueprint FPS: Make Your Own First Person Shooter In Unreal!</h4>
+                <p class="post-mortem-p">"Learn how to make an FPS using Unreal Blueprints. The entire course uses Unreal Engine 5."</p>
+            </div>
+        </div>
+        <h3>Watched</h3>
+        <div class="courses-grid">
+            <div class="course-item">
+                <a href="https://www.udemy.com/course/unreal-engine-5-multiplayer/?couponCode=KEEPLEARNING" target="_blank">
+                    <img src="./assets/Course2.jpg" alt="course">
+                </a>
+                <h4 class="post-mortem-p">Unreal Engine 5 C++ Multiplayer: Make An Online Co-op Game</h4>
+                <p class="post-mortem-p">"Learn intermediate C++ and the latest UE5 tech to make your own online multiplayer adventure games."</p>
+                <p class="post-mortem-p">Take a look at my <a href="https://www.udemy.com/certificate/UC-34668d0f-fb56-42e4-930d-4550385d8124/">certificate of completion</a></p>
+            </div>
+            <div class="course-item">
+                <a href="https://www.udemy.com/course/unrealcourse/?couponCode=KEEPLEARNING" target="_blank">
+                    <img src="./assets/Course1.jpg" alt="course">
+                </a>
+                <h4 class="post-mortem-p">Unreal Engine 5 C++ Developer: Learn C++ & Make Video Games</h4>
+                <p class="post-mortem-p">"Created in collaboration with Epic Games. Learn C++ from basics while making your first 5 video games in Unreal"</p>
+                <p class="post-mortem-p">Take a look at my <a href="https://www.udemy.com/certificate/UC-51ed7e35-7874-46b6-aadb-455cefeec2b8/">certificate of completion</a></p>
+            </div>
+        </div>
+        <h3>In Library</h3>
+        <div class="courses-grid">
+            
+            <div class="course-item">
+                <a href="https://www.udemy.com/course/unreal-engine-5-gas-top-down-rpg/" target="_blank">
+                    <img src="./assets/Course3.jpg" alt="course">
+                </a>
+                <h4 class="post-mortem-p">Unreal Engine 5 - Gameplay Ability System - Top Down RPG</h4>
+                <p class="post-mortem-p">"Create a multiplayer RPG with Unreal Engine's Gameplay Ability System (GAS)!"</p>
+            </div>
+            <div class="course-item">
+                <a href="https://www.udemy.com/course/unreal-engine-2d/" target="_blank">
+                    <img src="./assets/Course5.jpg" alt="course">
+                </a>
+                <h4 class="post-mortem-p">Unreal Engine 2D: Make Your Own Epic 2D Games Using C++</h4>
+                <p class="post-mortem-p">"Make Games in UE5 with C++: Master Sprites, Tile Maps, and Gameplay Coding Using Paper2D and PaperZD"</p>
+            </div>
+            <div class="course-item">
+                <a href="https://www.udemy.com/course/unreal-engine-action-combat-game/?couponCode=ST2MT110724ANEW" target="_blank">
+                    <img src="./assets/Course6.jpg" alt="course">
+                </a>
+                <h4 class="post-mortem-p">Unreal Engine 5 C++: Make Your Own Action Combat Game</h4>
+                <p class="post-mortem-p">"Master Dynamic Combat, AI Challenges, and C++ Techniques to Create Your Own Epic Action Games in UE5"</p>
+            </div>
+            <div class="course-item">
+                <a href="https://www.udemy.com/course/unreal-engine-5-build-a-complete-survival-game/?couponCode=ST2MT110724ANEW" target="_blank">
+                    <img src="./assets/Course7.jpg" alt="course">
+                </a>
+                <h4 class="post-mortem-p">Unreal Engine 5: Build a Complete Survival Game in UE5</h4>
+                <p class="post-mortem-p">"Create an epic survival game with crafting, combat, and modular systems on a tropical island — powered by UE5 Blueprints"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Jams section -->
+    <section id="game-jams">
+        <h2>Game Jams</h2>
+        <div class="game-jams-grid">
+            <div class="game-jam-item">
+                <a href="https://itch.io/jam/one-game-a-month-41" target="_blank">
+                    <img src="./assets/GameJam1.jpg" alt="course">
+                </a>
+                <h4 class="post-mortem-p">One Game a Month #41</h4>
+                <p class="post-mortem-p">Developed the <a href="#TheLastPetalsOfSpring"> Last Petals of Spring</a>.</p>
+                <a class="post-mortem-p" href="https://victoriacoding.itch.io/thelastpetalsofspring">View Game</a>
+            </div>
+        </div>
     </section>
 
     <!-- Contact section -->
