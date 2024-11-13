@@ -159,6 +159,11 @@ header nav ul li a {
     margin-bottom: 0.5rem;
 }
 
+.book-item p
+{
+    margin-top: 10px;
+}
+
 /* Contact section */
 #contact {
     padding: 4rem 2rem;
