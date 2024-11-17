@@ -6,3 +6,4 @@ assets/CrystalCavernExecutable.zip filter=lfs diff=lfs merge=lfs -text
 assets/CyrstalCavern.zip filter=lfs diff=lfs merge=lfs -text
 assets/MarbleRunExcutable.zip filter=lfs diff=lfs merge=lfs -text
 assets/MarbleRun.zip filter=lfs diff=lfs merge=lfs -text
+assets/MarsMarine.zip filter=lfs diff=lfs merge=lfs -text
