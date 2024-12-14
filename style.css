@@ -62,6 +62,15 @@ header nav ul li a {
     padding: 4rem 2rem;
     background-color: var(--white); /* White background */
     color: var(--dark-text); /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero img
+{
+    height: 300px;
+    width: 300px;
 }
 
 #about h2 {
@@ -72,7 +81,6 @@ header nav ul li a {
 #about p {
     text-align: center;
     max-width: 600px;
-    margin: 0 auto;
 }
 
 /* Portfolio section */
